@@ -75,9 +75,10 @@ elif operation == "decrypt":
     for i in decryptMsg:
         plainArray.append(alphabet[i])
 
+    # join the plainArray together to form the plaintext as a string
     plainText = ''.join(plainArray) 
     print(plainText)
 
+# catch invalid operation
 else:
     print("invalid operation method")
-
