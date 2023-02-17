@@ -9,10 +9,15 @@ alphabet = ["a", "b", "c", "d", "e", "f", "g", "h", "i",
             "j", "k", "l", "m", "n", "o", "p", "q", "r",
             "s", "t", "u", "v", "w", "x", "y", "z"]
 
+specialChars = [" ", ",", "!", "@", "#","$", "%", "^", "&", "*", 
+              "(", ")", "-", "_", "+", "=", "'", '"', ";", ":",
+              ".", "?", "<", ">", "/", "\\", "[", "]", "{", "}"]
+
 afterKey = alphabet[key:]
 beforeKey = alphabet[:key]
 
-cipherAlphabet = afterKey + beforeKey
+alphabet += specialChars
+cipherAlphabet = afterKey + beforeKey + specialChars
 
 print(alphabet)
 print(cipherAlphabet)
@@ -22,18 +27,21 @@ msg = []
 for char in message:
     msg.append(char)
 
-print(msg)
+# print(msg)
 
 indexMsg = []
 for i in msg:
     indexMsg.append(alphabet.index(i))
 
-print(indexMsg)
+# print(indexMsg)
 
 cipherArray = []
 for i in indexMsg:
     cipherArray.append(cipherAlphabet[i])
 
-print(cipherArray)
+# print(cipherArray)
 cipherText = ''.join(cipherArray)
 print(cipherText)
+
+
+
