@@ -1,0 +1,23 @@
+Cipher Script Instructions
+
+Follow these steps to translate a "rotate by" (ROT) cipher.
+
+1.  To translate a message, enter the message into the textbox below "Input Message". 
+
+2a.  Change the value of the key by using the spinner arrows. The key represents the number of rotations that the letters in the alphabet will rotate by, changing the starting letter.
+
+2b.  The value of the key must be between 0 and 26.
+
+Pro-tip #1: If translating a message from plaintext to ciphertext, remember the value of the key to reverse the message.
+
+Pro-tip #2: Key values 0 and 26 will provide the same result of no change to the alphabet rotation.
+
+3.  When ready to translate the message, do either 3a or 3b.
+
+3a.  Click the "Encrypt" button to encrypt the message.
+
+3b.  Click the "Decrypt" button to decrypt the message.
+
+4.  The resulting translated message will appear below the textbox "Translated Message".
+
+5.  To copy the translated message to your clipboard, click the "Copy" button.

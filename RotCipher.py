@@ -1,3 +1,5 @@
+import GUI
+
 # function for encryption
 def encrypt():
     # get the index of each character 
